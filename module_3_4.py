@@ -3,7 +3,7 @@
 def single_root_words(root_word, *other_words):
     same_words = []
     for word in other_words:
-        if word.lower().count(root_word.lower()) != 0 or root_word.lower().count(word.lower()):
+        if word.lower().count(root_word.lower()) != 0 or root_word.lower().count(word.lower()) != 0:
             same_words.append(word)
     return same_words
 
