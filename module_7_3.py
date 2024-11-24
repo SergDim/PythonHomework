@@ -41,10 +41,7 @@ class WordsFinder:
         count_words = {}
         w = word.lower()
         for key,value in self.get_all_words().items():
-            c = value.count(w)
-            if c > 0:
-                count_words.update({key : c})
-                break
+            count_words.update({key : value.count(w)})
         return count_words
 
 finder2 = WordsFinder('test_file.txt')
